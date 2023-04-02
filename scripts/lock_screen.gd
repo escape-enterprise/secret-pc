@@ -17,7 +17,7 @@ func _on_Submit_pressed():
 				return
 		
 		# Shutdown
-		"secret shutdown":
+		"~~~":
 			get_tree().quit()
 			return
 			
