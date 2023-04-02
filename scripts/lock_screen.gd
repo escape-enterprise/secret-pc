@@ -1,4 +1,8 @@
 extends Control
+func _physics_process(delta):
+	if Input.is_action_just_released("ui_accept"):
+		_on_Submit_pressed()
+		
 func _on_Submit_pressed():
 	# Reset error
 	get_node("%Error").visible = false
